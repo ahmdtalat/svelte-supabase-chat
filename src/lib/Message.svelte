@@ -43,10 +43,11 @@
   .container > div {
     padding: 1rem;
     width: fit-content;
-    max-width: 30vw;
+    max-width: 350px;
     border-radius: 8px;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 1, 1);
     text-align: left;
+    word-break: break-all;
   }
 
   .right > div {
