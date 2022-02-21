@@ -1,4 +1,6 @@
 <script>
+  import { replace } from 'svelte-spa-router'
+
   import db from '../store'
 
   let email = ''
@@ -12,6 +14,7 @@
       email
     })
     loading = false
+    replace('/')
   }
 </script>
 

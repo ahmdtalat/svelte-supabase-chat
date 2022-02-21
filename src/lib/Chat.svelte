@@ -1,5 +1,7 @@
 <script lang="ts">
-  import db, { store } from '../store'
+  import { replace } from 'svelte-spa-router'
+
+  import { store } from '../store'
   import MsgForm from './MsgForm.svelte'
   import Messages from './Messages.svelte'
 </script>
@@ -11,7 +13,7 @@
 <div class="chat">
   <section>
     <strong>{$store.user.email} ❤‍🔥</strong>
-    <button on:click={db.logout}>Logout</button>
+    <button on:click={() => replace('/logout')}>Logout</button>
   </section>
 
   <!-- Messgaes -->
